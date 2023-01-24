@@ -1,0 +1,32 @@
+<svg style="background-color: #69175F" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 25 160 40" class="waves"> <defs> <path id="wave" d="M-150 53c30.77 0 59.538-20 90-20 31.077 0 60.256 20 90 20 30.77 0 59.23-20 90-20 30.77 0 59.23 20 90 20v20h-360z"></path> </defs> <g> <use xlink:href="#wave" x="10" y="0" fill="rgb(252, 225, 255)"></use> </g> </svg>
+<section id="order" class="order section">
+    <div class="container-fluid container-lg">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <span class="order__title">Успейте купить Level-UP по скидке!</span>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <div class="order__timer">
+                    <div id="countdown" class="order__countdown">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-md-2 d-flex justify-content-center align-items-center">
+                <img class="order__img" src="images/dist/prod.png" alt="">
+            </div>
+            <div class="col-12 col-md-6 order-md-1 d-flex flex-column justify-content-start align-items-start">
+                <div class="order__price">
+                    <span class="order__old-price">9999 рублей</span>
+                    <span class="order__new-price animate__animated animate__pulse animate__infinite infinite">999 рублей</span>
+                </div>
+                <form>
+                    <input class="order__input-name" type="text" placeholder="Введите ваше имя" required>
+                    <span class="order__tooltip-name">Введите имя пользователя. Например: Ivan Ivanov</span>
+                    <input class="order__input-phone" type="number" placeholder="Введите ваш телефон" required>
+                    <span class="order__tooltip-phone">Введите корректный номер телефона. Например: 899999999</span>
+                    <button class="order__btn btn">Оформить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

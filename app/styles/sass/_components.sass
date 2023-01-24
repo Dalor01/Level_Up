@@ -1,0 +1,44 @@
+.component
+    background-color: #fce3ff;
+    opacity: 1;
+    background-image:  radial-gradient(#69175F 1.1px, transparent 1.1px), radial-gradient(#69175F 1.1px, #fce3ff 1.1px);
+    background-size: 44px 44px;
+    background-position: 0 0,22px 22px;
+    &__item-content
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__item-img
+        background: #fff
+        object-fit: contain
+        border-radius: 50%
+        width: 180px
+        height: 180px
+        margin-bottom: 10px
+    &__item-text
+        color: $purple
+        text-transform: uppercase
+        text-align: center
+        font-size: 18px
+        line-height: 1.2
+        font-weight: 700
+        margin-bottom: 20px
+        margin-top: 10px
+    &__product-img
+    &__btn
+        margin-top: 70px
+        background: $purple
+        color: #fff
+@include media-breakpoint-down(md)
+    .component
+        &__item-img
+            width: 150px
+            height: 150px
+        &__product-img
+            width: 150px
+            height: 330px
+            object-fit: contain
+        &__item-text
+            text-align: center
+        &__btn
+            margin-top: 0px
